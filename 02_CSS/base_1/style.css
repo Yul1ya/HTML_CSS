@@ -1,0 +1,30 @@
+div{
+    background-image: url('cards.png');
+    width: 141px;
+    height: 189px;
+    background-repeat: no-repeat;
+    float:left;
+ }
+ .card1{
+     background-position: -430px -1594px;
+ }
+ .card2{
+     background-position: 0px -1795px;
+     margin-left: -80px;
+     margin-top: 30px;
+ }
+ .card3{
+     background-position: -289px -1395px;
+     margin-left: -80px;
+     margin-top: 60px;
+ }
+ .card4{
+     background-position: -145px -2190px;
+     margin-left: -80px;
+     margin-top: 90px;
+ }
+ .card5{
+     background-position: -0px -2390px;
+     margin-left: -80px;
+     margin-top: 120px;
+ }
