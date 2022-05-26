@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Document</title>
+    <style>
+
+        div.weekday > div{
+            background-color: #d3d3d3;
+            border: solid #454545 1px;
+            color: #979191;
+            cursor: pointer;
+            position: relative;
+            border-radius: 3px;
+            float: left;
+            width: 100px;
+        }
+        
+        div.schedule {
+            width: 100px;
+            display: none;
+        }
+
+        div.schedule > div {
+            background-color: #d3d3d3;
+            border: solid #454545 1px;
+            color: #979191;
+            cursor: pointer;
+            border-radius: 3px;
+        }
+
+        div.weekday > div:hover div.schedule {
+            display: block;
+            position: absolute;
+        }
+
+        div.weekday > div:hover:nth-child(3){
+            background-color: #818181;
+        }
+
+        @media all and (max-width: 628px){
+            div.weekday > div{
+                float: none;
+            }
+            
+            div.weekday > div:hover div.schedule {
+                left: 90%;
+                top: 60%;
+                z-index: 1;
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="weekday">
+        
+        <div>Понедельник</div>
+        <div>Вторник</div>
+        
+        <div>
+            Среда
+            <div class="schedule">
+                <div>Завтрак</div>
+                <div>Обед</div>
+                <div>Ужин</div>
+            </div>
+        </div>
+
+        <div>Четверг</div>
+        <div>Пятница</div>
+        
+        <div>Суббота</div>
+
+    </div>
+    
+</body>
+</html>

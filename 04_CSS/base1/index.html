@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        
+        p {
+            text-indent: 20px;
+            border: solid #d5d5d5 1px;
+            border-radius: 0px 8px;
+        }
+
+        a[style] {
+            background-repeat: no-repeat;
+            background-position: 100% 50%;
+            padding-right: 17px;
+        }
+
+        a[target]:before {
+            content: url(pictures/extref.png);
+        }
+
+        ul {
+            list-style-image: url(pictures/logo-list.jpg);
+        }
+
+        a img {
+            display: none;
+        }
+
+        a:hover img{
+            display: inline-block;
+        } 
+        
+    </style>
+</head>
+<body>
+
+    <h2>Форматы файлов.</h2>
+    
+    <p>.DOC или .doc (от англ. <a href="https://ru.wikipedia.org/wiki/.doc" target="_blank">document</a>) — 
+        расширение имени файла, используемое для файлов, представляющих текст, 
+        с разметкой или без. Расширение .DOC часто использовалось для обозначения простых текстовых файлов без 
+        форматирования, однако позже стало использоваться для двоичных форматов с разметкой.<br>
+        <a href="files/document.doc" style="background-image: url(pictures/logo-doc.jpg)">Документ MS Word</a></p>
+
+    <p>Portable Document Format (<a href="https://ru.wikipedia.org/wiki/pdf" target="_blank">PDF</a>) — 
+        межплатформенный формат электронных документов, разработанный фирмой Adobe 
+        Systems с использованием ряда возможностей языка PostScript.<br>
+        <a href="files/document.pdf" style="background-image: url(pictures/logo-pdf.png)">Документ PDF</a></p>
+
+    <p>ZIP — популярный формат сжатия данных и архивации файлов. Файл в этом формате обычно имеет расширение 
+        <a href="https://ru.wikipedia.org/wiki/ZIP" target="_blank">.zip</a> 
+        и хранит в сжатом или несжатом виде один или несколько файлов, которые можно из него извлечь путём распаковки 
+        с помощью специальной программы.<br>
+        <a href="files/document.zip" style="background-image: url(pictures/logo-zip.gif)">Архив</a></p>
+
+    <h3>Это список из файлов</h3>
+
+    <ul>
+        <li><a href="files/document.doc">Документ MS Word<img src="pictures/logo-doc.jpg" alt="doc"></a></li>
+        <li><a href="files/document.pdf">Документ PDF<img src="pictures/logo-pdf.png" alt="pdf"></a></li>
+        <li><a href="files/document.zip">Архив<img src="pictures/logo-zip.gif" alt="gif"></a></li>
+    </ul>
+
+
+</body>
+</html>
