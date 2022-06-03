@@ -1,0 +1,38 @@
+table {
+    border-collapse: collapse;
+    border: 2px dotted;
+}
+
+tr:nth-child(2n+3){
+    background-color: #cfc2c4;
+}
+
+tr:first-child{
+    background-color: #808080;
+}
+
+td:first-of-type{
+    font-weight: bold;
+}
+
+tr:last-child td{
+    font-weight: normal;
+    text-align: center;
+    border:hidden;
+    border-top: 2px dotted black;
+    color:#808080;
+    background-color: white;
+}
+
+td {
+    border: 1px dotted #828282;
+}
+
+button{
+    background-color: #0b62fd;
+    border: none;
+    color: white;
+    height: 30px;
+    border-radius: 4px;
+    margin-left: 10px;
+}
